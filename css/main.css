@@ -337,6 +337,7 @@ ul li {
 .github-image {
     width: 300px;
     transition: transform 0.3s ease;
+    pointer-events: none;
 }
 
 .github-link:hover .github-image {
