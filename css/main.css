@@ -329,6 +329,14 @@ ul li {
 /* ==========================================================================
 	$Teams
 ========================================================================== */
+.github-image {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.github-link:hover .github-image {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
 
 .intro-content {
 	margin-top: 20px;
