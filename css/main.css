@@ -492,59 +492,28 @@ footer {
   gap: 50px; /* Space between sections */
   flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
 }
-
 /* Footer section styling */
 .footer-section {
   max-width: 300px; /* Limit the width of each section */
   text-align: center; /* Center the content of each section */
 }
 
-.footer-section h4 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-/* Contact section styling */
-.contact p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-/* Footer share list (social icons) */
-ul.footer-share {
-  list-style-type: none; /* Remove default list style */
-  padding: 0;
-  margin: 0;
+/* For contact and social presence sections */
+.contact-social-container {
   display: flex;
-  justify-content: center; /* Center social links horizontally */
-  gap: 20px; /* Space between social icons */
+  justify-content: space-between; /* Align them left and right */
+  width: 100%; /* Make it take the full width */
 }
-
-ul.footer-share li {
-  margin: 0; /* Remove extra margin between list items */
-}
-
-ul.footer-share li a {
-  font-size: 1.5rem; /* Increase icon size */
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-ul.footer-share li a:hover {
-  color: #3498db; /* Change icon color on hover */
-}
-
 /* Mobile responsiveness: Stacks sections on smaller screens */
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: row; /* Ensure the sections stay side by side */
-    gap: 30px; /* Adjust space between sections for better appearance on small screens */
+    flex-direction: column; /* Stack the sections vertically */
+    gap: 20px; /* Adjust space between sections */
   }
 
-  .footer-section {
-    text-align: center; /* Ensure text in footer sections stays centered */
+  .contact-social-container {
+    flex-direction: column; /* Stack contact and social sections vertically on smaller screens */
+    align-items: center;
+    gap: 10px;
   }
 }
-
