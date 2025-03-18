@@ -292,6 +292,11 @@ ul li {
 /* ==========================================================================
 	$Banner
 ========================================================================== */
+.container {
+	display: flex;
+    justify-content: flex-end
+}
+
 .banner {
 	background-image: url(../images/banner.jpg);
 	background-position: center top;
