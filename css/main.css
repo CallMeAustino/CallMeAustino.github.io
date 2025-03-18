@@ -496,6 +496,7 @@ footer {
 /* Footer section styling */
 .footer-section {
   max-width: 300px; /* Limit the width of each section */
+  text-align: center; /* Center the content of each section */
 }
 
 .footer-section h4 {
@@ -517,10 +518,11 @@ ul.footer-share {
   margin: 0;
   display: flex;
   justify-content: center; /* Center social links horizontally */
+  gap: 20px; /* Space between social icons */
 }
 
 ul.footer-share li {
-  margin: 0 10px; /* Space between social icons */
+  margin: 0; /* Remove extra margin between list items */
 }
 
 ul.footer-share li a {
@@ -537,7 +539,12 @@ ul.footer-share li a:hover {
 /* Mobile responsiveness: Stacks sections on smaller screens */
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: column; /* Stack the sections vertically */
-    gap: 20px;
+    flex-direction: row; /* Ensure the sections stay side by side */
+    gap: 30px; /* Adjust space between sections for better appearance on small screens */
+  }
+
+  .footer-section {
+    text-align: center; /* Ensure text in footer sections stays centered */
   }
 }
+
