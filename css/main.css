@@ -364,11 +364,6 @@ ul li {
     border: none;
  }
 
-.github-image {
-    width: 300px;
-    transition: transform 0.3s ease;
-}
-
 .work {
 	-moz-box-shadow: 0 0 0 1px #fff;
 	-webkit-box-shadow: 0 0 0 1px #fff;
