@@ -445,6 +445,8 @@ ul li {
 	-ms-transform: scale(1.2);
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
+	
+/*
 }
 .work-box:hover .overlay {
 	opacity: 1;
@@ -456,6 +458,8 @@ ul li {
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
+*/
+	
 /* ------------------------------------------------------------------------------
 	 Footer
 -------------------------------------------------------------------------------*/
