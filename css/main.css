@@ -332,6 +332,14 @@ ul li {
 #introduction {
 	padding-bottom: 0;	
 }
+
+.silica {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Vertically center */
+  align-items: center; /* Horizontally center */
+  text-align: center; /* Optional: Centers the text inside the link */
+}
 .github-link {
    	display: block;
 	margin-left: auto;
