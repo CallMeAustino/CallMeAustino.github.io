@@ -468,45 +468,68 @@ ul li {
 /* ------------------------------------------------------------------------------
 	 Footer
 -------------------------------------------------------------------------------*/
-.footer {
-	width: 94%;
-	margin: auto;
-	text-align: left;
-	padding-top: 5%;
-	padding-bottom: 7%;
+/* General footer styles */
+footer {
+  background-color: #333; /* Dark background for the footer */
+  color: #fff; /* White text color */
+  padding: 30px 0; /* Padding for spacing */
+  text-align: center; /* Center text in the footer */
 }
-.footer h4 {
-	font-size: 14px;
-	color: #000;
-	letter-spacing: 2px;
-	margin: 0 0 15px 0;
-	padding: 0px;
+
+/* Footer container: Center the content */
+.footer-container {
+  display: flex;
+  justify-content: center; /* Center the sections horizontally */
+  align-items: center; /* Align content vertically */
+  gap: 50px; /* Space between sections */
+  flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
 }
-.footer p {
-	font-size: 12px;
-	color: #6c7279;
+
+/* Footer section styling */
+.footer-section {
+  max-width: 300px; /* Limit the width of each section */
 }
-.footer a {
-	color: #000;
+
+.footer-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
-.footer a:hover {
-	text-decoration: underline;
+
+/* Contact section styling */
+.contact p {
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
-.footer .footer-share {
-	margin-top: 0;
+
+/* Footer share list (social icons) */
+ul.footer-share {
+  list-style-type: none; /* Remove default list style */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center social links horizontally */
 }
-.footer .footer-share li {
-	display: inline-block;
-	float: none;
+
+ul.footer-share li {
+  margin: 0 10px; /* Space between social icons */
 }
-.footer .footer-share a {
-	border: none;
-	font-size: 14px;
-	color: #000;
-	letter-spacing: 15px;
+
+ul.footer-share li a {
+  font-size: 1.5rem; /* Increase icon size */
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
-.footer .fa-heart {
-	color: #e84545;
-	font-size: 12px;
-	margin: 0 2px;
+
+ul.footer-share li a:hover {
+  color: #3498db; /* Change icon color on hover */
+}
+
+/* Mobile responsiveness: Stacks sections on smaller screens */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack the sections vertically */
+    gap: 20px;
+  }
 }
