@@ -356,6 +356,13 @@ ul li {
 /* ------------------------------------------------------------------------------
 	 Works
 -------------------------------------------------------------------------------*/
+ .work-box {
+	 display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 200px; /* Set a height to see vertical centering */
+    border: 1px solid black;
+ }
 
 .github-image {
     width: 300px;
